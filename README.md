@@ -25,3 +25,26 @@ game = TicTacToe()
 # 开始游戏
 play(game, 'X', 'O')
 ```
+
+## 示例输出
+以下是运行上述代码时的示例输出：
+
+```
+| 0 | 1 | 2 |
+| 3 | 4 | 5 |
+| 6 | 7 | 8 |
+
+X makes a move to square 0
+| X |   |   |
+|   |   |   |
+|   |   |   |
+
+O makes a move to square 1
+| X | O |   |
+|   |   |   |
+|   |   |   |
+
+...
+
+X wins!
+```
