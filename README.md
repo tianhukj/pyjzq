@@ -11,3 +11,17 @@
 ```bash
 pip install pyjzq
 ```
+
+## 使用方法
+在Python代码中使用
+你可以在Python代码中导入并使用这个包。以下是一个简单的示例：
+
+```
+from pyjzq import TicTacToe, play
+
+# 创建游戏实例
+game = TicTacToe()
+
+# 开始游戏
+play(game, 'X', 'O')
+```
