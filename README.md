@@ -70,3 +70,12 @@ pip install -r requirements.txt
 ```bash
 pytest
 ```
+
+## 许可证
+该项目使用 [`MIT 许可证`](LICENSE)
+
+# #贡献
+欢迎贡献！请阅读 CONTRIBUTING.md 了解详细的贡献流程。
+
+## 反馈
+如果你有任何问题或建议，请通过 [Issues](https://github.com/tianhukj/pyjzq/issues) 页面反馈。
