@@ -62,8 +62,7 @@ X wins!
 如果你想要为这个项目做出贡献，你可以按照以下步骤进行开发和测试：
 
 ### 克隆仓库
-```
-bash
+```bash
 git clone https://github.com/tianhukj/pyjzq.git
 ```
 ### 创建虚拟环境并安装依赖
