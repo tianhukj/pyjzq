@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 ### 运行测试
 ```bash
-pytest
+python main.py
 ```
 
 ## 许可证
