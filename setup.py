@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyjzq',
-    version='0.1.0',
+    version='0.1',
     author='tianhukj',
     author_email='tianhukj@outlook.com',
     description='A command-line tic-tac-toe game',
