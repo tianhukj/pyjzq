@@ -48,3 +48,25 @@ O makes a move to square 1
 
 X wins!
 ```
+
+
+## 开发
+如果你想要为这个项目做出贡献，你可以按照以下步骤进行开发和测试：
+
+### 克隆仓库
+```
+bash
+git clone https://github.com/tianhukj/pyjzq.git
+```
+### 创建虚拟环境并安装依赖
+```bash
+cd pyjzq
+python -m venv venv
+source venv/bin/activate  # Windows 上使用 `venv\Scripts\activate`
+pip install -r requirements.txt
+```
+
+### 运行测试
+```bash
+pytest
+```
