@@ -1,3 +1,5 @@
+# pyjzq/game.py
+
 class TicTacToe:
     def __init__(self):
         self.board = [' ' for _ in range(9)]  # A list to hold the state of the board
@@ -5,7 +7,7 @@ class TicTacToe:
 
     def print_board(self):
         # We will print the board after each move
-        for row in [self.board[i * 3:(i + 1) * 3)]:
+        for row in [self.board[i * 3:(i + 1) * 3) for i in range(3)]:
             print('| ' + ' | '.join(row) + ' |')
 
     @staticmethod
@@ -59,9 +61,6 @@ def play(game, x_player, o_player, print_game=True):
 
     letter = 'X'
     while game.empty_squares():
-        if game.num_empty_squares() == 0:
-            return None
-
         if letter == 'O':
             square = o_player.get_move(game)
         else:
@@ -80,9 +79,21 @@ def play(game, x_player, o_player, print_game=True):
 
             letter = 'O' if letter == 'X' else 'X'
 
-def main():
-    t = TicTacToe()
-    play(t, 'X', 'O')
+class HumanPlayer:
+    def __init__(self, letter):
+        self.letter = letter
 
-if __name__ == "__main__":
-    main()
+    def get_move(self, game):
+        valid_square = False
+        val = None
+        while not valid_square:
+            square = input(self.letter + '\'s turn. Input move (0-8): ')
+            try:
+                val = int(square)
+                if val not in game.available_moves():
+                    raise ValueError
+                valid_square = True
+            except ValueError:
+                print('Invalid square. Try again.')
+
+        return val
