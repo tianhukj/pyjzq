@@ -1,3 +1,1 @@
-from .game import TicTacToe, play
-
-__version__ = "0.1"
+from .game import TicTacToe, play, HumanPlayer
