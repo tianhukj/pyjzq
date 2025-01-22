@@ -17,13 +17,21 @@ pip install pyjzq
 你可以在Python代码中导入并使用这个包。以下是一个简单的示例：
 
 ```
-from pyjzq import TicTacToe, play
+from pyjzq import TicTacToe, play, HumanPlayer
 
-# 创建游戏实例
-game = TicTacToe()
+def main():
+    # 创建游戏实例
+    game = TicTacToe()
 
-# 开始游戏
-play(game, 'X', 'O')
+    # 创建玩家实例
+    x_player = HumanPlayer('X')
+    o_player = HumanPlayer('O')
+
+    # 开始游戏
+    play(game, x_player, o_player)
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## 示例输出
